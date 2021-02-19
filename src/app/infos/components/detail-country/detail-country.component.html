@@ -1,0 +1,20 @@
+<p>detail-country works!</p>
+<div class='supercontainer'>
+    <div *ngFor="let country of CountryToDisplay">
+        <p-card header="{{country.name}}" subheader="Capitale : {{country.capital}}" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src={{country.flag}}>
+            </ng-template>
+            <p>Region du monde : {{country.region}}</p>
+            <p>Population : {{country.population}}</p>
+            <p>Superficie totale : {{country.area}} km²</p>
+            <p>Frontière avec :{{country.borders}}</p>
+            <p>Langues parlées :{{country.languages}}</p>
+            <ng-template pTemplate="footer">
+                <p-button label="Save" icon="pi pi-check"></p-button>
+                <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
+            </ng-template>
+        </p-card>
+    </div>
+</div>
+

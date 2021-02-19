@@ -1,0 +1,9 @@
+<div class='mainform'>
+    <div class='titleform'>
+        Choix du pays
+    </div>
+    <div class='inputform'>
+        <p-autoComplete [(ngModel)]="countrySelected" [suggestions]="filteredCountries" (completeMethod)="search($event)" (ngModelChange)="change($event)"></p-autoComplete>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+.navbarre{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 10vh);
+    justify-items: center;
+    background-color: cadetblue;
+}
+
+.a{
+    border : 5px solid red;
+    grid-column: 1/6;
+    
+}
+
+.b{
+    border : 5px solid green;
+    grid-column: 2/3;
+}
+
+.c{
+    border : 5px solid blue;
+    grid-column: 4/5;
+}

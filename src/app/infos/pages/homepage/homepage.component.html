@@ -1,0 +1,4 @@
+<div class='main'>
+    <app-form (countryChoice)="onCountrySelected($event)" [countries]="countries"></app-form>
+    <app-detail-country [CountryToDisplay]="countryDetail"></app-detail-country>
+</div>
